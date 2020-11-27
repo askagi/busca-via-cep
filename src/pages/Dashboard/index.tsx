@@ -25,6 +25,7 @@ const Dashboard: React.FC = () => {
     const response = await api.get<Address>(`${newAddress}/json`);
 
     const address = response.data;
+    console.log(address);
 
     setAddresses([...addresses, address]);
   }
